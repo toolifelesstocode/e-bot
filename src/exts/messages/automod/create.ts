@@ -9,12 +9,12 @@ export default new EventListener('messageCreate', async (msg, _ctx) => {
     }
 
     if (
-        (msg.content !== channel.name) ||
-        (msg.embeds.length !== 0) ||
-        (msg.attachments.length !== 0) ||
-        (msg.stickerItems !== undefined) || // does not return a list for whatever reason
-        (msg.components.length !== 0)
+        msg.content !== channel.name ||
+        msg.embeds.length !== 0 ||
+        msg.attachments.length !== 0 ||
+        msg.stickerItems !== undefined || // does not return a list for whatever reason
+        msg.components.length !== 0
     ) {
-        return await msg.delete('not o');
+        return await msg.delete('not e');
     }
 });

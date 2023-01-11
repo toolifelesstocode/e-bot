@@ -4,7 +4,7 @@ import { EventListener } from 'yuuko';
 export default new EventListener('guildMemberUpdate', async (guild, member, _oldMember, _ctx) => {
     if (guild.id !== process.env.GUILD_ID) return;
 
-    if (member.nick !== 'o') {
-        return await member.edit({ nick: 'o' }, 'not o');
+    if (member.nick !== 'e') {
+        return await member.edit({ nick: 'e' }, 'not e');
     }
 });

@@ -7,7 +7,7 @@ export default new EventListener('guildMemberAdd', async (guild, member, _ctx) =
     else if (member.pending) return;
 
     try {
-        return await member.addRole(process.env.DEFAULT_O_ROLE_ID, 'o');
+        return await member.addRole(process.env.DEFAULT_E_ROLE_ID, 'e');
     } catch (error) {
         const logChannel = guild.channels.get(process.env.LOG_CHANNEL_ID);
         if (logChannel instanceof TextChannel) {
@@ -17,5 +17,4 @@ export default new EventListener('guildMemberAdd', async (guild, member, _ctx) =
             );
         }
     }
-    
 });

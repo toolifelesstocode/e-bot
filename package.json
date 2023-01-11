@@ -1,10 +1,10 @@
 {
-  "name": "o-bot",
+  "name": "e-bot",
   "type": "commonjs",
   "version": "1.0.0",
-  "description": "A Discord bot to only make sure 'o' is uttered.",
+  "description": "A Discord bot to only make sure 'e' is uttered.",
   "main": "dist/index.js",
-  "repository": "https://github.com/toolifelesstocode/o-bot.git",
+  "repository": "https://github.com/toolifelesstocode/e-bot.git",
   "author": "Sham <thesham@protonmail.com>",
   "license": "MIT",
   "scripts": {

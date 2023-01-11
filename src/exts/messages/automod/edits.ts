@@ -9,6 +9,6 @@ export default new EventListener('messageUpdate', async (msg, oldMsg, _ctx) => {
     }
 
     if (msg.content !== channel.name) {
-        return await msg.delete('not o');
+        return await msg.delete('not e');
     }
 });

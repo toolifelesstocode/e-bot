@@ -3,12 +3,12 @@ version: "3"
 services:
   bot:
     restart: unless-stopped
-    container_name: o-bot
+    container_name: e-bot
     build:
       context: .
       dockerfile: Dockerfile
     environment:
       TOKEN: $TOKEN
       GUILD_ID: $GUILD_ID
-      DEFAULT_O_ROLE_ID: $DEFAULT_O_ROLE_ID
+      DEFAULT_E_ROLE_ID: $DEFAULT_E_ROLE_ID
       LOG_CHANNEL_ID: $LOG_CHANNEL_ID

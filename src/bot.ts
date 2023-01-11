@@ -13,7 +13,7 @@ export class Client extends _Client {
 
         this.on('ready', () => {
             this.editStatus({
-                name: 'o',
+                name: 'e',
                 type: 5,
             });
             console.info(
